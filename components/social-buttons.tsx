@@ -40,17 +40,17 @@ export default function SocialButtons() {
             <MessageCircle className="h-5 w-5" />
           </a>
         </Button>
-        <Button size="icon" variant="default" className="rounded-full bg-[#3b5998] hover:bg-[#2d4373]" asChild>
+        <Button size="icon" variant="default" className="rounded-full bg-[#1877F2] hover:bg-[#1877F2]/90" asChild>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <Facebook className="h-5 w-5" />
           </a>
         </Button>
-        <Button size="icon" variant="default" className="rounded-full bg-[#e4405f] hover:bg-[#d31e40]" asChild>
+        <Button size="icon" variant="default" className="rounded-full bg-[#E4405F] hover:bg-[#E4405F]/90" asChild>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <Instagram className="h-5 w-5" />
           </a>
         </Button>
-        <Button size="icon" variant="default" className="rounded-full bg-[#ff0000] hover:bg-[#cc0000]" asChild>
+        <Button size="icon" variant="default" className="rounded-full bg-[#FF0000] hover:bg-[#FF0000]/90" asChild>
           <a
             href="https://youtube.com/@dlconstrucciones"
             target="_blank"
@@ -66,7 +66,7 @@ export default function SocialButtons() {
       <Button
         size="icon"
         variant="secondary"
-        className="rounded-full mt-2"
+        className="rounded-full mt-2 bg-darkBrown hover:bg-darkBrown/90 text-white"
         onClick={scrollToTop}
         aria-label="Volver arriba"
       >

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -36,7 +37,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold">DL Construcciones</span>
+          <Image src="/images/dl-logo.png" alt="DL Construcciones" width={100} height={40} className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -45,7 +46,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${pathname === link.href ? "text-primary" : "text-muted-foreground"}`}
+              className={`text-sm font-medium transition-colors hover:text-orange ${pathname === link.href ? "text-orange" : "text-muted-foreground"}`}
             >
               {link.label}
             </Link>
@@ -54,7 +55,7 @@ export default function Navbar() {
 
         {/* Contact Button (Desktop) */}
         <div className="hidden md:block">
-          <Button asChild>
+          <Button asChild className="bg-orange hover:bg-orange/90 text-white">
             <Link href="/contacto">Solicitar presupuesto</Link>
           </Button>
         </div>
@@ -73,12 +74,12 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-lg font-medium transition-colors hover:text-primary ${pathname === link.href ? "text-primary" : "text-muted-foreground"}`}
+                  className={`text-lg font-medium transition-colors hover:text-orange ${pathname === link.href ? "text-orange" : "text-muted-foreground"}`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <Button asChild className="mt-4">
+              <Button asChild className="mt-4 bg-orange hover:bg-orange/90 text-white">
                 <Link href="/contacto">Solicitar presupuesto</Link>
               </Button>
             </div>

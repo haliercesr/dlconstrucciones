@@ -1,14 +1,23 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-muted py-12 px-4 md:px-6">
+    <footer className="bg-darkGray text-white py-12 px-4 md:px-6">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-lg font-bold mb-4">DL Construcciones</h3>
-            <p className="text-muted-foreground mb-4">
+            <div className="mb-4">
+              <Image
+                src="/images/dl-logo.png"
+                alt="DL Construcciones"
+                width={180}
+                height={120}
+                className="max-w-[180px]"
+              />
+            </div>
+            <p className="text-lightGray mb-4">
               Soluciones constructivas de calidad para proyectos residenciales y comerciales.
             </p>
             <div className="flex space-x-4">
@@ -23,7 +32,7 @@ export default function Footer() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-facebook"
+                  className="lucide lucide-facebook text-[#1877F2] hover:text-[#1877F2]/80"
                 >
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
@@ -39,7 +48,7 @@ export default function Footer() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-instagram"
+                  className="lucide lucide-instagram text-[#E4405F] hover:text-[#E4405F]/80"
                 >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -62,7 +71,7 @@ export default function Footer() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-youtube"
+                  className="lucide lucide-youtube text-[#FF0000] hover:text-[#FF0000]/80"
                 >
                   <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
                   <path d="m10 15 5-3-5-3z" />
@@ -79,7 +88,7 @@ export default function Footer() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-message-circle"
+                  className="lucide lucide-message-circle text-green-600 hover:text-green-500"
                 >
                   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
                 </svg>
@@ -92,22 +101,22 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">Enlaces rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/" className="text-lightGray hover:text-orange transition-colors">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/servicios" className="text-lightGray hover:text-orange transition-colors">
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link href="/nosotros" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/nosotros" className="text-lightGray hover:text-orange transition-colors">
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/contacto" className="text-lightGray hover:text-orange transition-colors">
                   Contacto
                 </Link>
               </li>
@@ -121,7 +130,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/servicios/construccion-tradicional"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-lightGray hover:text-orange transition-colors"
                 >
                   Construcción Tradicional
                 </Link>
@@ -129,23 +138,20 @@ export default function Footer() {
               <li>
                 <Link
                   href="/servicios/sistema-constructivo"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-lightGray hover:text-orange transition-colors"
                 >
                   Sistema Constructivo
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/servicios/remodelaciones"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link href="/servicios/remodelaciones" className="text-lightGray hover:text-orange transition-colors">
                   Remodelaciones
                 </Link>
               </li>
               <li>
                 <Link
                   href="/servicios/diseno-arquitectonico"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-lightGray hover:text-orange transition-colors"
                 >
                   Diseño Arquitectónico
                 </Link>
@@ -156,7 +162,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-lg font-bold mb-4">Contacto</h3>
-            <address className="not-italic text-muted-foreground">
+            <address className="not-italic text-lightGray">
               <p className="mb-2">Av. Corrientes 1234, Piso 5</p>
               <p className="mb-2">Ciudad Autónoma de Buenos Aires</p>
               <p className="mb-2">Argentina</p>
@@ -166,7 +172,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
+        <div className="border-t border-borderGray mt-8 pt-8 text-center text-lightGray">
           <p>&copy; {new Date().getFullYear()} DL Construcciones. Todos los derechos reservados.</p>
         </div>
       </div>

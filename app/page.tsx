@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
+import AutoTextSlider from "@/components/auto-text-slider"
+import TestimonialSlider from "@/components/testimonial-slider"
+import StatsSection from "@/components/stats-section"
 
 export default function Home() {
   return (
@@ -17,11 +20,18 @@ export default function Home() {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Construimos tu futuro</h1>
-          <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl">
-            Soluciones constructivas de calidad para proyectos residenciales y comerciales
-          </p>
+          <AutoTextSlider
+            texts={[
+              "Soluciones constructivas de calidad para proyectos residenciales y comerciales",
+              "Expertos en construcción tradicional y sistemas constructivos modernos",
+              "Transformamos tus ideas en espacios funcionales y estéticos",
+              "Más de 15 años de experiencia en el sector de la construcción",
+              "Comprometidos con la calidad y satisfacción de nuestros clientes",
+            ]}
+            className="text-center"
+          />
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="text-lg">
+            <Button asChild size="lg" className="text-lg bg-orange hover:bg-orange/90 text-white">
               <Link href="/servicios">Nuestros Servicios</Link>
             </Button>
             <Button
@@ -40,7 +50,7 @@ export default function Home() {
       <section className="py-16 px-4 md:px-8 bg-background">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Nuestros Servicios Destacados</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 title: "Construcción Tradicional",
@@ -63,6 +73,13 @@ export default function Home() {
                 image: "/placeholder.svg?height=400&width=600",
                 link: "/servicios/remodelaciones",
               },
+              {
+                title: "Diseño Arquitectónico",
+                description:
+                  "Diseños arquitectónicos personalizados que combinan estética, funcionalidad y eficiencia energética.",
+                image: "/placeholder.svg?height=400&width=600",
+                link: "/servicios/diseno-arquitectonico",
+              },
             ].map((service, index) => (
               <div
                 key={index}
@@ -79,7 +96,10 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <Button asChild variant="outline" className="group">
+                  <Button
+                    asChild
+                    className="group bg-white text-orange hover:bg-white hover:text-orange/80 shadow-none border-none"
+                  >
                     <Link href={service.link}>
                       Ver más <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
@@ -89,7 +109,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-orange hover:bg-orange/90 text-white">
               <Link href="/servicios">Ver todos los servicios</Link>
             </Button>
           </div>
@@ -97,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 px-4 md:px-8 bg-muted">
+      <section className="py-16 px-4 md:px-8 bg-lightGray">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">¿Por qué elegirnos?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -123,68 +143,68 @@ export default function Home() {
                 icon: "🛡️",
               },
             ].map((feature, index) => (
-              <div key={index} className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <p className="text-mediumGray">{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Stats Section */}
+      <StatsSection />
 
       {/* Testimonials */}
       <section className="py-16 px-4 md:px-8 bg-background">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Lo que dicen nuestros clientes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
+          <TestimonialSlider
+            testimonials={[
               {
                 name: "María González",
                 testimonial:
-                  "Excelente trabajo en la construcción de nuestra casa. Cumplieron con los plazos y el presupuesto acordado. Muy profesionales.",
+                  "Excelente trabajo en la construcción de nuestra casa. Cumplieron con los plazos y el presupuesto acordado. Muy profesionales y atentos a cada detalle durante todo el proceso.",
                 image: "/placeholder.svg?height=100&width=100",
               },
               {
                 name: "Carlos Rodríguez",
                 testimonial:
-                  "La remodelación de nuestra oficina quedó perfecta. El equipo fue muy atento a nuestras necesidades y sugerencias.",
+                  "La remodelación de nuestra oficina quedó perfecta. El equipo fue muy atento a nuestras necesidades y sugerencias. El resultado final superó nuestras expectativas.",
                 image: "/placeholder.svg?height=100&width=100",
               },
               {
                 name: "Laura Martínez",
                 testimonial:
-                  "Construyeron nuestra casa con el sistema constructivo que ofrecen y estamos muy satisfechos con el resultado. Excelente calidad y atención.",
+                  "Construyeron nuestra casa con el sistema constructivo que ofrecen y estamos muy satisfechos con el resultado. Excelente calidad y atención personalizada en cada etapa.",
                 image: "/placeholder.svg?height=100&width=100",
               },
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-card rounded-lg p-6 shadow-md">
-                <div className="flex items-center mb-4">
-                  <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
-                    <Image
-                      src={testimonial.image || "/placeholder.svg"}
-                      alt={testimonial.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <h3 className="text-lg font-bold">{testimonial.name}</h3>
-                </div>
-                <p className="text-muted-foreground italic">"{testimonial.testimonial}"</p>
-              </div>
-            ))}
-          </div>
+              {
+                name: "Roberto Sánchez",
+                testimonial:
+                  "Contratamos a DL Construcciones para un proyecto comercial y quedamos muy conformes. Su profesionalismo y capacidad para resolver problemas hizo que todo el proceso fuera muy fluido.",
+                image: "/placeholder.svg?height=100&width=100",
+              },
+              {
+                name: "Ana Fernández",
+                testimonial:
+                  "La ampliación de nuestra casa fue realizada con gran profesionalismo. Respetaron los tiempos acordados y el presupuesto inicial. Recomiendo ampliamente sus servicios.",
+                image: "/placeholder.svg?height=100&width=100",
+              },
+            ]}
+          />
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 md:px-8 bg-primary text-primary-foreground">
+      <section className="py-16 px-4 md:px-8 bg-darkBrown text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para comenzar tu proyecto?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Contáctanos hoy mismo para una consulta gratuita y presupuesto sin compromiso.
           </p>
-          <Button asChild size="lg" variant="secondary" className="text-lg">
+          <Button asChild size="lg" variant="secondary" className="text-lg bg-orange hover:bg-orange/90 text-white">
             <Link href="/contacto">Solicitar presupuesto</Link>
           </Button>
         </div>
