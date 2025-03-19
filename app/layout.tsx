@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "DL Construcciones - Servicios de construcción de calidad",
     description:
       "Empresa líder en construcción y servicios constructivos. Ofrecemos soluciones de calidad para proyectos residenciales y comerciales.",
-    url: "https://dlconstrucciones.com",
+    url: "https://dlconstrucciones.vercel.app",
     siteName: "DL Construcciones",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/fondo-home.jpg",
         width: 1200,
         height: 630,
         alt: "DL Construcciones",
@@ -40,6 +40,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+          <link rel="icon" href="/favicon.ico" />
+        </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
