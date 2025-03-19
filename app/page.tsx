@@ -56,21 +56,21 @@ export default function Home() {
                 title: "Construcción Tradicional",
                 description:
                   "Construcción de viviendas y edificios con métodos tradicionales y materiales de alta calidad.",
-                image: "imagen1.JPEG",
+                image: "imagen1.jpg",
                 link: "/servicios/construccion-tradicional",
               },
               {
                 title: "Sistema Constructivo",
                 description:
                   "Sistema constructivo moderno, eficiente y sustentable para proyectos residenciales y comerciales.",
-                image: "imagen2.JPEG",
+                image: "imagen2.jpg",
                 link: "/servicios/sistema-constructivo",
               },
               {
                 title: "Remodelaciones",
                 description:
                   "Transformamos espacios existentes con diseños modernos y funcionales adaptados a tus necesidades.",
-                image: "imagen3.JPEG",
+                image: "imagen3.jpg",
                 link: "/servicios/remodelaciones",
               },
               {
