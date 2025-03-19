@@ -45,11 +45,11 @@ export default function SocialButtons() {
             <Facebook className="h-5 w-5" />
           </a>
         </Button>
-        <Button size="icon" variant="default" className="rounded-full bg-[#E4405F] hover:bg-[#E4405F]/90" asChild>
+        {/*<Button size="icon" variant="default" className="rounded-full bg-[#E4405F] hover:bg-[#E4405F]/90" asChild>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <Instagram className="h-5 w-5" />
           </a>
-        </Button>
+        </Button>*/}
         <Button size="icon" variant="default" className="rounded-full bg-[#FF0000] hover:bg-[#FF0000]/90" asChild>
           <a
             href="https://youtube.com/@dlconstrucciones"
