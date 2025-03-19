@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/images/dl-logo.png" alt="DL Construcciones" width={100} height={40} className="h-10 w-auto" />
+          <Image src="/images/dl-logo-white.png" alt="DL Construcciones" width={100} height={40} className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}

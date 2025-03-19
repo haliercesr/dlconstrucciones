@@ -36,12 +36,12 @@ export default function SocialButtons() {
       {/* Social Media Buttons */}
       <div className="flex flex-col gap-2">
         <Button size="icon" variant="default" className="rounded-full bg-green-600 hover:bg-green-700" asChild>
-          <a href="https://wa.me/5491112345678" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <a href="https://wa.me/5492213502103" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
             <MessageCircle className="h-5 w-5" />
           </a>
         </Button>
         <Button size="icon" variant="default" className="rounded-full bg-[#1877F2] hover:bg-[#1877F2]/90" asChild>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a href="https://www.facebook.com/diego.deluca.73594" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <Facebook className="h-5 w-5" />
           </a>
         </Button>
@@ -66,7 +66,7 @@ export default function SocialButtons() {
       <Button
         size="icon"
         variant="secondary"
-        className="rounded-full mt-2 bg-darkBrown hover:bg-darkBrown/90 text-white"
+        className="rounded-full mt-2 bg-black/80 hover:bg-black/70 text-white"
         onClick={scrollToTop}
         aria-label="Volver arriba"
       >

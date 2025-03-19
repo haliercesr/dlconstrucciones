@@ -12,8 +12,8 @@ export default function Footer() {
               <Image
                 src="/images/dl-logo.png"
                 alt="DL Construcciones"
-                width={180}
-                height={120}
+                width={160}
+                height={100}
                 className="max-w-[180px]"
               />
             </div>

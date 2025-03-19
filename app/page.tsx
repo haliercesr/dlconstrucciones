@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[80vh] w-full">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/fondo-home.jpg"
           alt="Construcción de calidad"
           fill
           className="object-cover brightness-50"
@@ -56,28 +56,28 @@ export default function Home() {
                 title: "Construcción Tradicional",
                 description:
                   "Construcción de viviendas y edificios con métodos tradicionales y materiales de alta calidad.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "imagen1.JPEG",
                 link: "/servicios/construccion-tradicional",
               },
               {
                 title: "Sistema Constructivo",
                 description:
                   "Sistema constructivo moderno, eficiente y sustentable para proyectos residenciales y comerciales.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "imagen2.JPEG",
                 link: "/servicios/sistema-constructivo",
               },
               {
                 title: "Remodelaciones",
                 description:
                   "Transformamos espacios existentes con diseños modernos y funcionales adaptados a tus necesidades.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "imagen3.JPEG",
                 link: "/servicios/remodelaciones",
               },
               {
                 title: "Diseño Arquitectónico",
                 description:
                   "Diseños arquitectónicos personalizados que combinan estética, funcionalidad y eficiencia energética.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "imagen4.jpg",
                 link: "/servicios/diseno-arquitectonico",
               },
             ].map((service, index) => (
@@ -166,31 +166,31 @@ export default function Home() {
                 name: "María González",
                 testimonial:
                   "Excelente trabajo en la construcción de nuestra casa. Cumplieron con los plazos y el presupuesto acordado. Muy profesionales y atentos a cada detalle durante todo el proceso.",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/image/imagen2.jpg",
               },
               {
                 name: "Carlos Rodríguez",
                 testimonial:
                   "La remodelación de nuestra oficina quedó perfecta. El equipo fue muy atento a nuestras necesidades y sugerencias. El resultado final superó nuestras expectativas.",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/image/imagen1.jpg",
               },
               {
                 name: "Laura Martínez",
                 testimonial:
                   "Construyeron nuestra casa con el sistema constructivo que ofrecen y estamos muy satisfechos con el resultado. Excelente calidad y atención personalizada en cada etapa.",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/image/imagen3.jpg",
               },
               {
                 name: "Roberto Sánchez",
                 testimonial:
                   "Contratamos a DL Construcciones para un proyecto comercial y quedamos muy conformes. Su profesionalismo y capacidad para resolver problemas hizo que todo el proceso fuera muy fluido.",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/image/imagen4.jpg",
               },
               {
                 name: "Ana Fernández",
                 testimonial:
                   "La ampliación de nuestra casa fue realizada con gran profesionalismo. Respetaron los tiempos acordados y el presupuesto inicial. Recomiendo ampliamente sus servicios.",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/image/imagen5.jpg",
               },
             ]}
           />
@@ -200,8 +200,8 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 px-4 md:px-8 bg-darkBrown text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para comenzar tu proyecto?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">¿Listo para comenzar tu proyecto?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-black">
             Contáctanos hoy mismo para una consulta gratuita y presupuesto sin compromiso.
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg bg-orange hover:bg-orange/90 text-white">

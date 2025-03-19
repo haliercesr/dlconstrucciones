@@ -54,10 +54,10 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         // Custom colors
-        orange: "#ea7325",
-        darkBrown: "#2c120a",
+        orange: "#D96C23",
+        darkBrown: "#fff",
         brown: "#5a3927",
-        darkGray: "#343434",
+        darkGray: "#000",
         mediumGray: "#7c7c7c",
         lightGray: "#ececec",
         almostBlack: "#040404",
