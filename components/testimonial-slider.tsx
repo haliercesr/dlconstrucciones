@@ -81,7 +81,7 @@ export default function TestimonialSlider({ testimonials, autoSlideInterval = 50
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full bg-background/80 backdrop-blur-sm z-10 hidden md:flex"
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full bg-darkGray/80 backdrop-blur-sm z-10 hidden md:flex"
         onClick={prevSlide}
       >
         <ChevronLeft className="h-5 w-5" />
@@ -91,7 +91,7 @@ export default function TestimonialSlider({ testimonials, autoSlideInterval = 50
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rounded-full bg-background/80 backdrop-blur-sm z-10 hidden md:flex"
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rounded-full bg-darkGray/80 backdrop-blur-sm z-10 hidden md:flex"
         onClick={nextSlide}
       >
         <ChevronRight className="h-5 w-5" />

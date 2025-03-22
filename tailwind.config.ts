@@ -23,7 +23,7 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: "#000",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -57,7 +57,8 @@ const config = {
         orange: "#D96C23",
         darkBrown: "#fff",
         brown: "#5a3927",
-        darkGray: "#000",
+        darkGray: "#343434",
+        darkBlack: "#000",
         mediumGray: "#7c7c7c",
         lightGray: "#ececec",
         almostBlack: "#040404",
