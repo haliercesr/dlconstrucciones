@@ -49,7 +49,7 @@ export default function Home() {
       {/* Featured Services */}
       <section className="py-16 px-4 md:px-8 bg-background">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Nuestros Servicios Destacados</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Nuestros Servicios Destacados</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -117,9 +117,9 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 px-4 md:px-8 bg-lightGray">
+      <section className="py-16 px-4 md:px-8 bg-darkGray">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">¿Por qué elegirnos?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">¿Por qué elegirnos?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -159,7 +159,7 @@ export default function Home() {
       {/* Testimonials */}
       <section className="py-16 px-4 md:px-8 bg-background">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Lo que dicen nuestros clientes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Lo que dicen nuestros clientes</h2>
           <TestimonialSlider
             testimonials={[
               {
@@ -198,10 +198,10 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 md:px-8 bg-darkBrown text-white">
+      <section className="py-16 px-4 md:px-8 bg-darkGray text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">¿Listo para comenzar tu proyecto?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-black">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">¿Listo para comenzar tu proyecto?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
             Contáctanos hoy mismo para una consulta gratuita y presupuesto sin compromiso.
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg bg-orange hover:bg-orange/90 text-white">

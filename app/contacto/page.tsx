@@ -58,7 +58,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="py-12 px-4 md:px-8">
+    <div className="py-12 px-4 md:px-8 text-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contáctanos</h1>
@@ -70,7 +70,7 @@ export default function ContactPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Contact Form */}
-          <div className="bg-card rounded-lg p-8 shadow-md">
+          <div className="bg-darkGray rounded-lg p-8 shadow-md">
             <h2 className="text-2xl font-bold mb-6">Envíanos un mensaje</h2>
 
             <Form {...form}>
@@ -333,7 +333,7 @@ export default function ContactPage() {
         {/* FAQ */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold mb-6">Preguntas frecuentes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-muted-foreground">
             {[
               {
                 question: "¿Cuál es el proceso para iniciar un proyecto?",

@@ -74,7 +74,7 @@ export default function ServicesPage() {
     <div className="py-12 px-4 md:px-8">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Nuestros Servicios</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Nuestros Servicios</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ofrecemos una amplia gama de servicios de construcción para satisfacer todas tus necesidades. Desde
             construcción tradicional hasta sistemas constructivos modernos y remodelaciones.
@@ -113,9 +113,9 @@ export default function ServicesPage() {
           ))}
         </div>
 
-        <div className="mt-16 bg-muted rounded-lg p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">¿Necesitas un servicio personalizado?</h2>
-          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+        <div className="mt-16 bg-darkGray rounded-lg p-8 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-white">¿Necesitas un servicio personalizado?</h2>
+          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto text-white">
             Contáctanos para discutir tus necesidades específicas y obtener un presupuesto personalizado.
           </p>
           <Button asChild size="lg">

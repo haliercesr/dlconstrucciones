@@ -16,8 +16,8 @@ export default function AboutPage() {
       <div className="container mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Sobre Nosotros</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Sobre Nosotros</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-muted-foreground">
             Somos una empresa líder en el sector de la construcción, comprometida con la calidad, la innovación y la
             satisfacción del cliente.
           </p>
@@ -33,17 +33,17 @@ export default function AboutPage() {
               className="object-cover"
             />
           </div>
-          <div>
-            <h2 className="text-3xl font-bold mb-6">Nuestra Historia</h2>
-            <p className="text-lg mb-4">
+          <div className="text-white">
+            <h2 className="text-3xl font-bold mb-6 ">Nuestra Historia</h2>
+            <p className="text-lg mb-4 text-muted-foreground">
               DL Construcciones nació hace más de 15 años con la visión de transformar el sector de la construcción,
               ofreciendo soluciones innovadoras y de alta calidad para todo tipo de proyectos.
             </p>
-            <p className="text-lg mb-4">
+            <p className="text-lg mb-4 text-muted-foreground">
               Lo que comenzó como un pequeño emprendimiento familiar, se ha convertido en una empresa reconocida por su
               excelencia, profesionalismo y compromiso con cada proyecto que realizamos.
             </p>
-            <p className="text-lg">
+            <p className="text-lg text-muted-foreground">
               A lo largo de nuestra trayectoria, hemos completado con éxito cientos de proyectos, desde viviendas
               unifamiliares hasta complejos comerciales, ganándonos la confianza de nuestros clientes y consolidándonos
               como referentes en el sector.
@@ -53,7 +53,7 @@ export default function AboutPage() {
 
         {/* Our Values */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Nuestros Valores</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Nuestros Valores</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -92,7 +92,7 @@ export default function AboutPage() {
 
         {/* Our Team */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Nuestro Equipo</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Nuestro Equipo</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -148,7 +148,7 @@ export default function AboutPage() {
 
         {/* Why Choose Us */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">¿Por qué elegirnos?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">¿Por qué elegirnos?</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-card rounded-lg p-8 shadow-md">
               <h3 className="text-2xl font-bold mb-4">Nuestra Experiencia</h3>

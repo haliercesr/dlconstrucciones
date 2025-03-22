@@ -243,12 +243,12 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">{service.title}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">{service.title}</h1>
             <p className="text-xl text-muted-foreground mb-6">{service.description}</p>
             <div className="mb-8">
-              <p className="text-base mb-6">{service.longDescription}</p>
-              <h3 className="text-2xl font-bold mb-4">Características</h3>
-              <ul className="space-y-2">
+              <p className="text-base mb-6 text-white">{service.longDescription}</p>
+              <h3 className="text-2xl font-bold mb-4 text-muted-foreground">Características</h3>
+              <ul className="space-y-2 text-muted-foreground">
                 {service.features.map((feature, index) => (
                   <li key={index} className="flex items-start">
                     <Check className="h-5 w-5 text-primary mr-2 mt-0.5" />
@@ -273,7 +273,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Nuestro Proceso</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Nuestro Proceso</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {service.process.map((step, index) => (
               <div key={index} className="bg-card rounded-lg p-6 shadow-md">
@@ -288,7 +288,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Galería de Proyectos</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Galería de Proyectos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {service.gallery.map((image, index) => (
               <div key={index} className="relative h-64 rounded-lg overflow-hidden">
@@ -303,8 +303,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
 
-        <div className="bg-muted rounded-lg p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">¿Interesado en nuestro servicio de {service.title.toLowerCase()}?</h2>
+        <div className="bg-darkGray rounded-lg p-8 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-white">¿Interesado en nuestro servicio de {service.title.toLowerCase()}?</h2>
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             Contáctanos hoy mismo para obtener más información y un presupuesto personalizado para tu proyecto.
           </p>
